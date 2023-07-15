@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BioActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/wa1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="#E3FD"
+        >
+        <TextView
+            android:id="@+id/tvjudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            android:text="Akun"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/wa1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_600sdp"
+            android:background="#ffffff">
+
+
+
+            <RelativeLayout
+                android:id="@+id/kepala"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/profil" />
+
+            <TextView
+                android:id="@+id/ed1"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kepala"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="-55dp"
+                android:layout_toRightOf="@id/kepala"
+                android:ems="15"
+                android:hint="Cindy Dwiana Putri "
+                android:inputType="textCapSentences"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/nomor"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ed1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/kepala"
+                android:ems="15"
+                android:hint="+6283567125487"
+                android:inputType="textCapSentences"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/aaa"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@drawable/baseline_mode_24"
+                android:layout_marginLeft="1000dp"
+                android:layout_below="@id/nomor"/>
+
+            <ImageView
+                android:id="@+id/aa"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="-80dp"
+                android:background="@drawable/baseline_mode_24"
+                android:layout_marginLeft="330dp"
+                android:layout_below="@id/nomor"/>
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="40sp"
+                android:src="@drawable/w"
+                android:layout_below="@id/aa"
+                />
+
+
+            <TextView
+                android:id="@+id/aaaa"
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:text="Akun"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:layout_below="@id/aaa"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/b"
+                android:layout_width="3000sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/aaaa"
+                android:background="@drawable/selector3"
+                tools:ignore="ExtraText">
+
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="265sp"
+                android:src="@drawable/baseline_list_alt_24"
+                />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="278sp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                />
+
+            <RelativeLayout
+                android:layout_width="299sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/aaaa"
+                android:background="@drawable/selector3" >
+
+                <TextView
+                    android:layout_width="2500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Pesanan     Cek riwayat pesanan aktif"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="270sp"
+                android:src="@drawable/baseline_list_alt_24"
+                />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="278sp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/c"
+                android:layout_width="3000sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/b"
+                android:background="@drawable/selector3" >
+
+                <TextView
+                    android:layout_width="2500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="2dp"
+                    android:text="GoClub"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="340sp"
+                android:src="@drawable/baseline_star_24"
+                />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="340sp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                />
+
+            <RelativeLayout
+                android:layout_width="299sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/c"
+                android:background="@drawable/selector3" >
+
+                <TextView
+                    android:layout_width="2500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Langgananku"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="410sp"
+                android:src="@drawable/baseline_assignment_ind_24"
+                />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="410sp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                />
+
+            <RelativeLayout
+                android:id="@+id/d"
+                android:layout_width="3000sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/c"
+                android:background="@drawable/selector3" >
+
+                <TextView
+                    android:layout_width="2500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="2dp"
+                    android:text="GoClub"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="340sp"
+                android:src="@drawable/baseline_star_24"
+                />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="340sp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                />
+
+            <RelativeLayout
+                android:id="@+id/e"
+                android:layout_width="299sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/d"
+                android:background="@drawable/selector3" >
+
+                <TextView
+                    android:layout_width="2500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Metode Pembayaran"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="480sp"
+                android:src="@drawable/baseline_credit_card_24"
+                />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="480sp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                />
+            <RelativeLayout
+                android:layout_width="299sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/c"
+                android:background="@drawable/selector3" >
+
+                <TextView
+                    android:layout_width="2500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Langgananku"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="410sp"
+                android:src="@drawable/baseline_assignment_ind_24"
+                />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="410sp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/f"
+                android:layout_width="299sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/e"
+                android:background="@drawable/selector3" >
+
+                <TextView
+                    android:layout_width="2500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Bantuan dan Laporan Saya"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="550sp"
+                android:src="@drawable/baseline_help_24"
+                />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="550sp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                />
+
+            <RelativeLayout
+                android:id="@+id/g"
+                android:layout_width="300sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/f"
+                android:background="@drawable/selector3" >
+
+                <TextView
+                    android:layout_width="2500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Profil Bisnis"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="620dp"
+                android:src="@drawable/baseline_business_center_24"
+                />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="620sp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                />
+
+            <RelativeLayout
+                android:id="@+id/h"
+                android:layout_width="299sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/g"
+                android:background="@drawable/selector3" >
+
+                <TextView
+                    android:layout_width="2500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Pilihan Bahasa"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="675sp"
+                android:src="@drawable/baseline_language_24"
+                />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="679sp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+

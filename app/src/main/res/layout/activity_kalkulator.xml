@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KalkulatorActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menggunakan Operator"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/angka1"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="15dp"
+        android:hint="Masukan Angka 1"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/angka2"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angka1"
+        android:layout_marginTop="15dp"
+        android:hint="Masukan Angka 1"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/angka2">
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0CF115"
+            android:hint="+"
+            android:onClick="tambah"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0CF115"
+            android:hint="-"
+            android:onClick="kurang"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0CF115"
+            android:hint=":"
+            android:onClick="bagi"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0CF115"
+            android:hint="*"
+            android:onClick="kali"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0CF115"
+            android:hint="="
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/tvhasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hasi"
+            android:layout_below="@+id/angka2"
+            android:textSize="25sp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>

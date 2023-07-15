@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AksesWidgetActivity">
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="@dimen/_400sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:src="@drawable/p"
+        android:layout_below="@id/tvjudul"/>
+    <TextView
+        android:id="@+id/tvjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:text="BIODATA DIRI"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/edNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/black"
+        android:text="Nama Lengkap   : Cindy Dwiana Putri" />
+
+    <EditText
+        android:id="@+id/edNamap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edNama"
+        android:layout_centerHorizontal="false"
+        android:textColor="@color/black"
+        android:text="Nama Panggilan   : Cindy " />
+
+    <EditText
+        android:id="@+id/nobp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edNamap"
+        android:layout_centerHorizontal="false"
+        android:textColor="@color/black"
+        android:text=" NOBP : 2010035" />
+
+
+    <EditText
+        android:id="@+id/Jurusan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nobp"
+        android:layout_centerHorizontal="false"
+        android:textColor="@color/black"
+        android:text="Jurusan : Sistem Informasi" />
+
+
+    <EditText
+        android:id="@+id/Jenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Jurusan"
+        android:layout_centerHorizontal="false"
+        android:textColor="@color/black"
+        android:text="Jenis Kelamin : Perempuan" />
+
+    <EditText
+        android:id="@+id/ttl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Jenis"
+        android:layout_centerHorizontal="false"
+        android:textColor="@color/black"
+        android:text="Tempat,tanggal lahir : Curup,12 Maret 2002" />
+
+
+
+    <EditText
+        android:id="@+id/kampus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ttl"
+        android:layout_centerHorizontal="false"
+        android:textColor="@color/black"
+        android:text="Kampus : STMIK Jayanusa" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kampus"
+        android:layout_marginTop="21dp">
+
+        <Button
+            android:id="@+id/btn_fvbid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35sp"
+            android:text="Submit"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnBinding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_fvbid"
+            android:layout_marginLeft="35sp"
+            android:text="Binding" />
+
+        <Button
+            android:id="@+id/btn_kotsin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_fvbid"
+            android:layout_marginLeft="35sp"
+            android:text="Kotsin" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
